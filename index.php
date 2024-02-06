@@ -22,8 +22,10 @@
         } else {
             $error = "Por favor, introduce usuario y contraseña.";
         }
+    } elseif ($_COOKIE['PHPSESSID']) {
+        header("Location: ./paginaalvarus");
+        exit();
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +45,7 @@
             <form action="./index.html" method="post">
                 <div class="logoInput">
                     <img src="./img/profile.png" alt="logoProfile" id="logoProfile">
-                    <input type="text" name="name" class="passuser" placeholder="Username" required>
+                    <input type="text" name="name" class="passuser" placeholder="Username" value=<?=$user?> required>
                 </div>
                 <div class="logoInput">
                     <img src="./img/key.png" alt="logoProfile" id="logoProfile">
