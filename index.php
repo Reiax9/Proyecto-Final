@@ -22,9 +22,6 @@
         } else {
             $error = "Por favor, introduce usuario y contraseña.";
         }
-    } elseif ($_COOKIE['PHPSESSID']) {
-        header("Location: ./paginaalvarus");
-        exit();
     }
 ?>
 
@@ -42,10 +39,10 @@
             <img src="./img/ClassWaveManagment_Logo.png" alt="Logo ClassWave" id="iconoEmpresa">
             <h1>Login</h1>
             <?php if(isset($error)) { echo "<span style='color:red;'>".$error."</span>"; } ?>
-            <form action="./index.html" method="post">
+            <form method="post">
                 <div class="logoInput">
                     <img src="./img/profile.png" alt="logoProfile" id="logoProfile">
-                    <input type="text" name="name" class="passuser" placeholder="Username" value=<?=$user?> required>
+                    <input type="text" name="name" class="passuser" placeholder="Username" value="<?= isset($user) ? $user : "";?>" required>
                 </div>
                 <div class="logoInput">
                     <img src="./img/key.png" alt="logoProfile" id="logoProfile">

@@ -1,5 +1,5 @@
 <?php
-    $cadena_connexio = 'mysql:dbname=classwave;host=localhost:3306'; //! Cambia la base de datos
+    $cadena_connexio = 'mysql:dbname=classwave;host=localhost:3316'; //! Cambia la base de datos
     $usuari = 'root';
     $passwd = '';
     try{

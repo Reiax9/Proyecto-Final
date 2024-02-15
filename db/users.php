@@ -1,6 +1,6 @@
 <?php
 
-    require "./conn.php";
+    require "./db/conn.php";
 
     function validateUser($user, $pass){
         $login = false;
