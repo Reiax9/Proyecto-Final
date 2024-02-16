@@ -1,7 +1,6 @@
 <?php
 
-    require_once "./db/conn.php";
-    require_once "./db/users.php";
+    require "./lib/users.php";
 
     session_start();
 
@@ -13,7 +12,7 @@
         if ($user && $pass) {
             if (validateUser($user, $pass)) {
                 $_SESSION['user'] = $user;
-                header("Location: ./paginaalvarus");
+                header("Location: http://panel.classwave.com");
                 exit();
             }
 
