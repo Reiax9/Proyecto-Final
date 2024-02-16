@@ -11,7 +11,7 @@ html {
 
 body {
   margin: auto;
-  background-image: url('/img/mountains1.jpg');
+  background-image: url("../img/wallpaper.webp");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -24,18 +24,16 @@ body {
 }
 
 #iconoEmpresa {
-  width: 100%;
-  height: 100%;
-  padding: 5em;
+  width: 10em;
+  height: 10em;
   background-image: url('../img/ClassWaveManagment_Logo.png');
 }
 
 #container-form{
   padding: 1em;
-  border: solid 1px black;
-  border-radius: 4px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 0.6em;
   box-shadow: 0 4px 16px 0 rgba(0, 208, 255, 1), 0 6px 20px 0 rgba(0, 208, 255, 0.2);
-  /* background-color:rgba(0, 0, 0, 0.2); */
 
   display: flex;
   flex-direction: column;
@@ -43,7 +41,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  backdrop-filter: blur(5px);
+  background: url('../img/white.png');
+  /* backdrop-filter: blur(5px); */
 }
 
 
@@ -62,26 +61,40 @@ body {
 }
 
 h1 {
-  font-size: 1em;
-  /* margin: 0.25em 0; */
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
   justify-content: center;
+  color: aliceblue;
 }
 
+.logoInput {
+  position: relative;
+}
+
+#logoProfile {
+  max-height: 1.5em;
+  max-width: 1.5em;
+  position: absolute;
+  top: 0.25em;
+  right: 0.8em;
+}
 
 input {
   flex: 1;
 
   margin: 0.25em;
-  padding: 0px 5px;
-
-  height: 1.7em;
+  padding-left: 0.5em;
+  padding-right: 2.5em;
+  
+  min-height: 2em;
 
   border-radius: 1em;
 }
 
+
 .passuser {
   width: auto;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 
 .passuser:hover {
@@ -90,6 +103,96 @@ input {
 
 
 #button {
-  margin-top: 0.7em;
+  padding: 0; /*! Resetea el padding de los inputs */
+  margin-top: 1em;
+  min-height: 2em;
   width: 35%;
+
+  background-color: rgb(131, 188, 254);
+}
+
+
+/* ! Sistema Responsive de 12 columnes -- SE TIENE QUE COPIAR Y PEGAR */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*! Esto también hay que hacer un copia y pega */
+
+[class*="col-"] { 
+    float: left;
+    padding: 15px;
+
+    text-align: center;
+    height: 7vh;
+}
+
+/*? Permite un salto de linea */
+
+ .row::after {
+  clear: both;
+  content: "";
+} 
+
+
+/*! Web Responsive para moviles, tablets o ordenadores */
+
+@media only screen and (min-width: 375px) {
+  /*¿ Telefonos moviles  */
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+}
+
+/*! Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+  /*<> Tablets  */
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+}
+
+/*! Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 950px) {
+  /*$ Desktop  */
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
 }
