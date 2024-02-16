@@ -31,11 +31,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login ClassWave</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/x-icon" href="./img/LogoV2.png">
 </head>
 <body>
     <main>
         <div id="container-form">
-            <img src="./img/ClassWaveManagment_Logo.png" alt="Logo ClassWave" id="iconoEmpresa">
+            <img src="./img/LogoV2.png" alt="Logo ClassWave" id="iconoEmpresa">
             <h1>Login</h1>
             <?php if(isset($error)) { echo "<span style='color:red;'>".$error."</span>"; } ?>
             <form method="post">
