@@ -32,8 +32,7 @@ CREATE TABLE IF NOT EXISTS `users_cursos` (
         ON DELETE CASCADE
 );
 
-INSERT INTO `users` (`mail`,`passHash`) VALUES ('admin@classwave.com','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'
-                                                'alvaro.queroa@educem.net','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'
-                                                'xavi.garciam@educem.net','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'
-                                                'blai.vallmitjanar@educem.net','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'                    
-                                                );
+INSERT INTO `users` (`name`,`lastName`,`mail`,`passHash`) VALUES ('admin','admin','admin@classwave.com','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'),
+                                                ('alvaro','quero','alvaro.queroa@educem.net','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'),
+                                                ('xavi','garcia','xavi.garciam@educem.net','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu'),
+                                                ('blai','vallmitjana','blai.vallmitjanar@educem.net','$2y$10$e98C6dt3iErOAJu.yAomfeSTZ/natF6QVitJbs6jt6phg7fDGdnPu');
